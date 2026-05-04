@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +16,6 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* FIX: Removed 'left: 25%' which was pushing text off-screen.
-           The wrapper now fills the 400px iframe correctly.
-        */
         .modal-wrapper {  
             width: 100%; 
             height: 100%;  
@@ -29,7 +25,8 @@
             position: relative;
         }
 
-        /* FIX: Changed width to 100% so it uses the full 400px.
+        /* MODIFIED: Added padding-right: 20% to shift 
+           the entire contents toward the left side.
         */
         .panel-left {  
             width: 100%;  
@@ -39,14 +36,11 @@
             align-items: center;  
             justify-content: center;  
             padding: 20px;
+            padding-right: 20%; 
         }
 
-        /* Hidden because it was crowding the layout in a small iframe */
         .panel-right { display: none; }
 
-        /* FIX: Slightly reduced font-size and letter-spacing 
-           to ensure "UNIVERSAL" doesn't hit the edges.
-        */
         .brand-name { 
             font-family: 'Bebas Neue', sans-serif; 
             font-size: 58px; 
